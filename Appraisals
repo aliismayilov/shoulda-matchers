@@ -20,7 +20,6 @@ rails_3_1 = proc do
   gem 'sass-rails', '~> 3.1.5'
   gem 'coffee-rails', '~> 3.1.1'
   gem 'uglifier', '>= 1.0.3'
-  gem 'rspec-rails', '2.99.0'
   gem 'minitest', '~> 4.0'
   gem 'minitest-reporters'
 end
@@ -45,7 +44,7 @@ rails_4 = proc do
   gem 'turbolinks'
   gem 'sdoc'
   gem 'activeresource', '4.0.0'
-  gem 'rspec-rails', '~> 3.0.1'
+  gem 'rspec-rails', '~> 3.2.0'
   # Test suite makes heavy use of attr_accessible
   gem 'protected_attributes'
   gem 'minitest-reporters'
@@ -98,7 +97,6 @@ if Gem::Requirement.new('> 1.9.2').satisfied_by?(ruby_version)
     gem 'jbuilder', '~> 1.2'
     gem 'sass-rails', '~> 4.0.0'
     gem 'bcrypt-ruby', '~> 3.1.2'
-    gem 'rspec-rails', '2.99.0'
   end
 
   appraise '4.1' do
