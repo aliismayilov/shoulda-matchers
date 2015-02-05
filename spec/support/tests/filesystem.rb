@@ -69,6 +69,10 @@ module Tests
     end
 
     def remove_from_file(path, pattern)
+      unless pattern.is_a?(Regexp)
+        pattern = Regexp.new('^' + Regexp.escape(pattern) + '$')
+      end
+
       transform(path) do |lines|
         lines.reject { |line| line =~ pattern }
       end
